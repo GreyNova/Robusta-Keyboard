@@ -1,8 +1,28 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Nimbus Keyboards
+
+A Next.js 15 e-commerce site for custom mechanical keyboards with 3D rendering, Prismic CMS, and Stripe payments.
 
 ## Getting Started
 
-First, run the development server:
+### 1. Environment Setup
+
+Copy `.env.example` to `.env.local` and fill in your credentials:
+
+```bash
+cp .env.example .env.local
+```
+
+Required environment variables:
+- `PRISMIC_ACCESS_TOKEN` - Your Prismic repository access token
+- `STRIPE_SECRET_KEY` - Your Stripe secret key
+
+### 2. Install Dependencies
+
+```bash
+npm install
+```
+
+### 3. Run the Development Server
 
 ```bash
 npm run dev
@@ -32,5 +52,9 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 ## Deploy on Vercel
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+**Important**: Before deploying, make sure to add the following environment variables in your Vercel project settings:
+- `PRISMIC_ACCESS_TOKEN`
+- `STRIPE_SECRET_KEY`
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
