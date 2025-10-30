@@ -18,7 +18,7 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
 });
 
 export const metadata: Metadata = {
-  title: "Order Confirmation | Nimbus Keyboards",
+  title: "Order Confirmation | Robusta Keyboards",
   description:
     "Thank you for your purchase! Your order has been confirmed and is being processed.",
 };
